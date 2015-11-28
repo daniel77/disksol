@@ -1,5 +1,7 @@
 package org.disksol
 
+import groovy.transform.ToString;
+
 class Doacao {
 	
 	String nome;
@@ -10,4 +12,9 @@ class Doacao {
 
     static constraints = {
     }
+	
+	@Override
+	public String toString() {
+		return nome;
+	}
 }

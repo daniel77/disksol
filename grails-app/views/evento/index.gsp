@@ -24,7 +24,13 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="local" title="${message(code: 'evento.local.label', default: 'Local')}" />
+						<th><g:message code="evento.author.label" default="Author" /></th>
+					
+						<g:sortableColumn property="dataInicio" title="${message(code: 'evento.dataInicio.label', default: 'Data Inicio')}" />
+					
+						<g:sortableColumn property="dataTermino" title="${message(code: 'evento.dataTermino.label', default: 'Data Termino')}" />
+					
+						<g:sortableColumn property="descricao" title="${message(code: 'evento.descricao.label', default: 'Descricao')}" />
 					
 						<g:sortableColumn property="nome" title="${message(code: 'evento.nome.label', default: 'Nome')}" />
 					
@@ -34,7 +40,13 @@
 				<g:each in="${eventoInstanceList}" status="i" var="eventoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${eventoInstance.id}">${fieldValue(bean: eventoInstance, field: "local")}</g:link></td>
+						<td><g:link action="show" id="${eventoInstance.id}">${fieldValue(bean: eventoInstance, field: "author")}</g:link></td>
+					
+						<td><g:formatDate date="${eventoInstance.dataInicio}" /></td>
+					
+						<td><g:formatDate date="${eventoInstance.dataTermino}" /></td>
+					
+						<td>${fieldValue(bean: eventoInstance, field: "descricao")}</td>
 					
 						<td>${fieldValue(bean: eventoInstance, field: "nome")}</td>
 					

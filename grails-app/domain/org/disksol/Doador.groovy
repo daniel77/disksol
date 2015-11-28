@@ -9,5 +9,10 @@ class Doador {
 	static hasMany = [doacoes: Doacao];
 
     static constraints = {
-    }
+    } 
+	
+	@Override
+	public String toString() {
+		return nome;
+	}
 }

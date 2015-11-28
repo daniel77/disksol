@@ -12,4 +12,9 @@ class Instituicao {
     static constraints = {
 		nome blank: false, unique:true 
     }
+	
+	@Override
+	public String toString(){
+		return nome;
+	}
 }

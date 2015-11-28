@@ -11,4 +11,9 @@ class LocalDoacao {
 	
     static constraints = {
     }
+	
+	@Override
+	public String toString() {
+		return nome;
+	}
 }

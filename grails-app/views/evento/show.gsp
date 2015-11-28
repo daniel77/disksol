@@ -23,11 +23,49 @@
 			</g:if>
 			<ol class="property-list evento">
 			
-				<g:if test="${eventoInstance?.local}">
+				<g:if test="${eventoInstance?.author}">
 				<li class="fieldcontain">
-					<span id="local-label" class="property-label"><g:message code="evento.local.label" default="Local" /></span>
+					<span id="author-label" class="property-label"><g:message code="evento.author.label" default="Author" /></span>
 					
-						<span class="property-value" aria-labelledby="local-label"><g:fieldValue bean="${eventoInstance}" field="local"/></span>
+						<span class="property-value" aria-labelledby="author-label"><g:link controller="instituicao" action="show" id="${eventoInstance?.author?.id}">${eventoInstance?.author?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventoInstance?.dataInicio}">
+				<li class="fieldcontain">
+					<span id="dataInicio-label" class="property-label"><g:message code="evento.dataInicio.label" default="Data Inicio" /></span>
+					
+						<span class="property-value" aria-labelledby="dataInicio-label"><g:formatDate date="${eventoInstance?.dataInicio}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventoInstance?.dataTermino}">
+				<li class="fieldcontain">
+					<span id="dataTermino-label" class="property-label"><g:message code="evento.dataTermino.label" default="Data Termino" /></span>
+					
+						<span class="property-value" aria-labelledby="dataTermino-label"><g:formatDate date="${eventoInstance?.dataTermino}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventoInstance?.descricao}">
+				<li class="fieldcontain">
+					<span id="descricao-label" class="property-label"><g:message code="evento.descricao.label" default="Descricao" /></span>
+					
+						<span class="property-value" aria-labelledby="descricao-label"><g:fieldValue bean="${eventoInstance}" field="descricao"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventoInstance?.locais}">
+				<li class="fieldcontain">
+					<span id="locais-label" class="property-label"><g:message code="evento.locais.label" default="Locais" /></span>
+					
+						<g:each in="${eventoInstance.locais}" var="l">
+						<span class="property-value" aria-labelledby="locais-label"><g:link controller="localDoacao" action="show" id="${l.id}">${l?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

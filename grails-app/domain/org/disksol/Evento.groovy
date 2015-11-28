@@ -13,4 +13,9 @@ class Evento {
 	static constraints = {
 		nome blank: false
 	}
+	
+	@Override
+	public String toString() {
+		return nome;
+	}
 }
