@@ -2,11 +2,10 @@ package org.disksol
 
 class Evento {
 
-	String nome
-	Date dataInicio
-	Date dataTermino
-	String descricao
-	
+	String nome;
+	Date dataInicio;
+	Date dataTermino;
+	String descricao;
 	
 	static belongsTo = [author: Instituicao]
 	static hasMany = [locais: LocalDoacao]
