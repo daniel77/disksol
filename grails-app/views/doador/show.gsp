@@ -61,15 +61,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${doadorInstance?.test}">
-				<li class="fieldcontain">
-					<span id="test-label" class="property-label"><g:message code="doador.test.label" default="Test" /></span>
-					
-						<span class="property-value" aria-labelledby="test-label"><g:fieldValue bean="${doadorInstance}" field="test"/></span>
-					
-				</li>
-				</g:if>
-			
 			</ol>
 			<g:form url="[resource:doadorInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

@@ -30,8 +30,6 @@
 					
 						<g:sortableColumn property="telefone" title="${message(code: 'doador.telefone.label', default: 'Telefone')}" />
 					
-						<g:sortableColumn property="test" title="${message(code: 'doador.test.label', default: 'Test')}" />
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -43,8 +41,6 @@
 						<td>${fieldValue(bean: doadorInstance, field: "nome")}</td>
 					
 						<td>${fieldValue(bean: doadorInstance, field: "telefone")}</td>
-					
-						<td>${fieldValue(bean: doadorInstance, field: "test")}</td>
 					
 					</tr>
 				</g:each>

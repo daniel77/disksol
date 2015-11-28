@@ -16,7 +16,16 @@
 		<g:message code="doador.doacoes.label" default="Doacoes" />
 		
 	</label>
-	<g:select name="doacoes" from="${org.disksol.Doacao.list()}" multiple="multiple" optionKey="id" size="5" required="" value="${doadorInstance?.doacoes*.id}" class="many-to-many"/>
+	
+<ul class="one-to-many">
+<g:each in="${doadorInstance?.doacoes?}" var="d">
+    <li><g:link controller="doacao" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="doacao" action="create" params="['doador.id': doadorInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'doacao.label', default: 'Doacao')])}</g:link>
+</li>
+</ul>
+
 
 </div>
 
@@ -35,15 +44,6 @@
 		
 	</label>
 	<g:textField name="telefone" value="${doadorInstance?.telefone}" />
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: doadorInstance, field: 'test', 'error')} ">
-	<label for="test">
-		<g:message code="doador.test.label" default="Test" />
-		
-	</label>
-	<g:textField name="test" value="${doadorInstance?.test}" />
 
 </div>
 
