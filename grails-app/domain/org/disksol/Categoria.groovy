@@ -7,4 +7,9 @@ class Categoria {
 	
     static constraints = {
     }
+	
+	@Override
+	public String toString() {
+		return nome;
+	}
 }
