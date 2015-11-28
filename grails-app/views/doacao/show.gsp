@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${doacaoInstance?.doador}">
+				<li class="fieldcontain">
+					<span id="doador-label" class="property-label"><g:message code="doacao.doador.label" default="Doador" /></span>
+					
+						<span class="property-value" aria-labelledby="doador-label"><g:link controller="doador" action="show" id="${doacaoInstance?.doador?.id}">${doacaoInstance?.doador?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${doacaoInstance?.nome}">
 				<li class="fieldcontain">
 					<span id="nome-label" class="property-label"><g:message code="doacao.nome.label" default="Nome" /></span>

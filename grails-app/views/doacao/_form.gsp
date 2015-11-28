@@ -20,6 +20,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: doacaoInstance, field: 'doador', 'error')} ">
+	<label for="doador">
+		<g:message code="doacao.doador.label" default="Doador" />
+		
+	</label>
+	<g:select id="doador" name="doador.id" from="${org.disksol.Doador.list()}" optionKey="id" required="" value="${doacaoInstance?.doador?.id}" class="many-to-one"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: doacaoInstance, field: 'nome', 'error')} ">
 	<label for="nome">
 		<g:message code="doacao.nome.label" default="Nome" />

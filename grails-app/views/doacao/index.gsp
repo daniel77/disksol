@@ -28,6 +28,8 @@
 					
 						<g:sortableColumn property="date" title="${message(code: 'doacao.date.label', default: 'Date')}" />
 					
+						<th><g:message code="doacao.doador.label" default="Doador" /></th>
+					
 						<g:sortableColumn property="nome" title="${message(code: 'doacao.nome.label', default: 'Nome')}" />
 					
 						<g:sortableColumn property="quantidade" title="${message(code: 'doacao.quantidade.label', default: 'Quantidade')}" />
@@ -41,6 +43,8 @@
 						<td><g:link action="show" id="${doacaoInstance.id}">${fieldValue(bean: doacaoInstance, field: "categoria")}</g:link></td>
 					
 						<td><g:formatDate date="${doacaoInstance.date}" /></td>
+					
+						<td>${fieldValue(bean: doacaoInstance, field: "doador")}</td>
 					
 						<td>${fieldValue(bean: doacaoInstance, field: "nome")}</td>
 					
