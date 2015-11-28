@@ -9,6 +9,8 @@ class LocalDoacao {
 	String cep
 	String bairro
 	
+	static belongsTo = [evento: Evento]
+	
     static constraints = {
     }
 	

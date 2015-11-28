@@ -32,6 +32,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${itemNecessidadeInstance?.evento}">
+				<li class="fieldcontain">
+					<span id="evento-label" class="property-label"><g:message code="itemNecessidade.evento.label" default="Evento" /></span>
+					
+						<span class="property-value" aria-labelledby="evento-label"><g:link controller="evento" action="show" id="${itemNecessidadeInstance?.evento?.id}">${itemNecessidadeInstance?.evento?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${itemNecessidadeInstance?.nome}">
 				<li class="fieldcontain">
 					<span id="nome-label" class="property-label"><g:message code="itemNecessidade.nome.label" default="Nome" /></span>

@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${localDoacaoInstance?.evento}">
+				<li class="fieldcontain">
+					<span id="evento-label" class="property-label"><g:message code="localDoacao.evento.label" default="Evento" /></span>
+					
+						<span class="property-value" aria-labelledby="evento-label"><g:link controller="evento" action="show" id="${localDoacaoInstance?.evento?.id}">${localDoacaoInstance?.evento?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${localDoacaoInstance?.logradouro}">
 				<li class="fieldcontain">
 					<span id="logradouro-label" class="property-label"><g:message code="localDoacao.logradouro.label" default="Logradouro" /></span>

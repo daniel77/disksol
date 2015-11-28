@@ -11,6 +11,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: itemNecessidadeInstance, field: 'evento', 'error')} ">
+	<label for="evento">
+		<g:message code="itemNecessidade.evento.label" default="Evento" />
+		
+	</label>
+	<g:select id="evento" name="evento.id" from="${org.disksol.Evento.list()}" optionKey="id" required="" value="${itemNecessidadeInstance?.evento?.id}" class="many-to-one"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: itemNecessidadeInstance, field: 'nome', 'error')} ">
 	<label for="nome">
 		<g:message code="itemNecessidade.nome.label" default="Nome" />

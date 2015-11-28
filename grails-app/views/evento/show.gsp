@@ -70,6 +70,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${eventoInstance?.necessidades}">
+				<li class="fieldcontain">
+					<span id="necessidades-label" class="property-label"><g:message code="evento.necessidades.label" default="Necessidades" /></span>
+					
+						<g:each in="${eventoInstance.necessidades}" var="n">
+						<span class="property-value" aria-labelledby="necessidades-label"><g:link controller="itemNecessidade" action="show" id="${n.id}">${n?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${eventoInstance?.nome}">
 				<li class="fieldcontain">
 					<span id="nome-label" class="property-label"><g:message code="evento.nome.label" default="Nome" /></span>

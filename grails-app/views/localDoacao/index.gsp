@@ -30,11 +30,11 @@
 					
 						<g:sortableColumn property="complemento" title="${message(code: 'localDoacao.complemento.label', default: 'Complemento')}" />
 					
+						<th><g:message code="localDoacao.evento.label" default="Evento" /></th>
+					
 						<g:sortableColumn property="logradouro" title="${message(code: 'localDoacao.logradouro.label', default: 'Logradouro')}" />
 					
 						<g:sortableColumn property="nome" title="${message(code: 'localDoacao.nome.label', default: 'Nome')}" />
-					
-						<g:sortableColumn property="numero" title="${message(code: 'localDoacao.numero.label', default: 'Numero')}" />
 					
 					</tr>
 				</thead>
@@ -48,11 +48,11 @@
 					
 						<td>${fieldValue(bean: localDoacaoInstance, field: "complemento")}</td>
 					
+						<td>${fieldValue(bean: localDoacaoInstance, field: "evento")}</td>
+					
 						<td>${fieldValue(bean: localDoacaoInstance, field: "logradouro")}</td>
 					
 						<td>${fieldValue(bean: localDoacaoInstance, field: "nome")}</td>
-					
-						<td>${fieldValue(bean: localDoacaoInstance, field: "numero")}</td>
 					
 					</tr>
 				</g:each>

@@ -29,6 +29,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: localDoacaoInstance, field: 'evento', 'error')} ">
+	<label for="evento">
+		<g:message code="localDoacao.evento.label" default="Evento" />
+		
+	</label>
+	<g:select id="evento" name="evento.id" from="${org.disksol.Evento.list()}" optionKey="id" required="" value="${localDoacaoInstance?.evento?.id}" class="many-to-one"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: localDoacaoInstance, field: 'logradouro', 'error')} ">
 	<label for="logradouro">
 		<g:message code="localDoacao.logradouro.label" default="Logradouro" />

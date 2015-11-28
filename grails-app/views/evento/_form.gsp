@@ -43,7 +43,34 @@
 		<g:message code="evento.locais.label" default="Locais" />
 		
 	</label>
-	<g:select name="locais" from="${org.disksol.LocalDoacao.list()}" multiple="multiple" optionValue="nome" optionKey="id" size="5" required="" value="${eventoInstance?.locais*.id}" class="many-to-many"/>
+	
+<ul class="one-to-many">
+<g:each in="${eventoInstance?.locais?}" var="l">
+    <li><g:link controller="localDoacao" action="show" id="${l.id}">${l?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="localDoacao" action="create" params="['evento.id': eventoInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'localDoacao.label', default: 'LocalDoacao')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: eventoInstance, field: 'necessidades', 'error')} ">
+	<label for="necessidades">
+		<g:message code="evento.necessidades.label" default="Necessidades" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${eventoInstance?.necessidades?}" var="n">
+    <li><g:link controller="itemNecessidade" action="show" id="${n.id}">${n?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="itemNecessidade" action="create" params="['evento.id': eventoInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'itemNecessidade.label', default: 'ItemNecessidade')])}</g:link>
+</li>
+</ul>
+
 
 </div>
 
