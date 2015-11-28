@@ -103,20 +103,18 @@
 			</ul>
 		</div>
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
+			<h1>Welcome to Disk Solidariedade</h1>
+			<p>
 
-			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
-				<ul>
-					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-					</g:each>
-				</ul>
-			</div>
+Consiste em uma Plataforma Social onde o cidadão pode registrar a intenção de doação de algo pertinente, podendo incluir fotos e demais informações pertinentes a esta doação.
+
+Canvas
+https://www.sebraecanvas.com/#/dashboard/meus-canvas/16868
+
+Foto:
+https://www.facebook.com/photo.php?fbid=1100465376630479&set=a.193313064012386.51554.100000010802538&type=3&theater&notif_t=like_tagged:</p>
+
+
 		</div>
 	</body>
 </html>
