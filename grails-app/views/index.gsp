@@ -112,9 +112,17 @@ Canvas
 https://www.sebraecanvas.com/#/dashboard/meus-canvas/16868
 
 Foto:
-https://www.facebook.com/photo.php?fbid=1100465376630479&set=a.193313064012386.51554.100000010802538&type=3&theater&notif_t=like_tagged:</p>
+https://www.facebook.com/photo.php?fbid=1100465376630479&set=a.193313064012386.51554.100000010802538&type=3&theater&notif_t=like_taggedn:</p>
 
-
+			<div id="controller-list" role="navigation">
+				<h2>Available Controllers:</h2>
+				<ul>
+					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
+					<g:if test="${c.fullName.startsWith("org.disksol.")}"></g:if>
+						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
+					</g:each>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
