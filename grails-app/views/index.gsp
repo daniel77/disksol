@@ -83,7 +83,7 @@
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
-			<h1>Application Status</h1>
+			<h1>App Status</h1>
 			<ul>
 				<li>App version: <g:meta name="app.version"/></li>
 				<li>Grails version: <g:meta name="app.grails.version"/></li>
@@ -95,32 +95,34 @@
 				<li>Services: ${grailsApplication.serviceClasses.size()}</li>
 				<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
 			</ul>
-			<h1>Installed Plugins</h1>
-			<ul>
-				<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-					<li>${plugin.name} - ${plugin.version}</li>
-				</g:each>
-			</ul>
 		</div>
 		<div id="page-body" role="main">
 			<h1>Welcome to Disk Solidariedade</h1>
 			<p>
+<br>
+Consiste em uma Plataforma Social onde o cidadão pode registrar a intenção de doação de algo pertinente,<br>
+ podendo incluir fotos e demais informações pertinentes a esta doação.<br>
 
-Consiste em uma Plataforma Social onde o cidadão pode registrar a intenção de doação de algo pertinente, podendo incluir fotos e demais informações pertinentes a esta doação.
+<br>
+<a href="https://www.sebraecanvas.com/#/dashboard/meus-canvas/16868">  Canvas </a><br>
 
-Canvas
-https://www.sebraecanvas.com/#/dashboard/meus-canvas/16868
-
-Foto:
-https://www.facebook.com/photo.php?fbid=1100465376630479&set=a.193313064012386.51554.100000010802538&type=3&theater&notif_t=like_taggedn:</p>
+<br>
+<a href="http://hackathon.peacelabs.co/projects/rua-da-cidadania-1">Peace libs</a>:<br>
+</p>
 
 			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
+				<h2>Menus disponiveis:</h2>
 				<ul>
+				
+				
+				
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-					<g:if test="${c.fullName.startsWith("org.disksol.")}"></g:if>
+					<g:if test="${c.fullName.startsWith('org.')}">
 						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
+						</g:if>
 					</g:each>
+					
+					
 				</ul>
 			</div>
 		</div>
