@@ -8,7 +8,7 @@ class Doacao {
 	Date date;
 	Integer quantidade;
 	
-	static belongsTo = [categoria: Categoria]
+	static belongsTo = [categoria: Categoria, doador: Doador]
 
     static constraints = {
     }
