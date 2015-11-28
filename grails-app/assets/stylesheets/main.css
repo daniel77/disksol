@@ -48,7 +48,7 @@ body {
 }
 
 #grailsLogo {
-	background-color: #abbf78;
+	background-color: #0000FF;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
@@ -65,7 +65,7 @@ body {
 }
 
 a:link, a:visited, a:hover {
-	color: #48802c;
+	color: #0000FF;
 }
 
 a:hover, a:active {
@@ -73,7 +73,7 @@ a:hover, a:active {
 }
 
 h1 {
-	color: #48802c;
+	color: #0000FF;
 	font-weight: normal;
 	font-size: 1.25em;
 	margin: 0.8em 0 0.3em 0;
@@ -92,6 +92,7 @@ img {
 #grailsLogo a {
 	display: inline-block;
 	margin: 1em;
+	color: white;
 }
 
 .content {
@@ -108,7 +109,7 @@ img {
 }
 
 .footer {
-	background: #abbf78;
+	background: #0000FF;
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
@@ -283,7 +284,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .required-indicator {
-	color: #48802C;
+	color: #0000FF;
 	display: inline-block;
 	font-weight: bold;
 	margin-left: 0.3em;

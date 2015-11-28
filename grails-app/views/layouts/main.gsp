@@ -17,7 +17,17 @@
 		<g:layoutHead/>
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="grails_logo.png" alt="Grails"/></a></div>
+		<div id="grailsLogo" role="banner"><a href="http://www.disksolidariedade.com.br/"><asset:image src="grails_logo.png" alt="Grails"/></a> <asset:image src="hackathon.png" alt="Grails"/> 
+							<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
+					<g:if test="${c.fullName.startsWith('org.')}">
+						<g:link controller="${c.logicalPropertyName}">${c.fullName.replace('org.disksol.', '').replace('Controller', '')}</g:link>
+						</g:if>
+					</g:each>
+					
+		</div>
+			
+							
+
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
