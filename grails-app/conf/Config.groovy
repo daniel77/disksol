@@ -142,6 +142,7 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'org.disksol.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'org.disksol.UserRole'
 grails.plugin.springsecurity.authority.className = 'org.disksol.Role'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/**':        ['permitAll'],
 	'/':                ['permitAll'],
 	'/index':           ['permitAll'],
 	'/index.gsp':       ['permitAll'],
