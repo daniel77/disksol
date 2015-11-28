@@ -23,6 +23,30 @@
 			</g:if>
 			<ol class="property-list doacao">
 			
+				<g:if test="${doacaoInstance?.avatar1}">
+				<li class="fieldcontain">
+										
+  		<img class="avatar" src="${createLink(controller:'doacao', action:'avatar1_image', id:doacaoInstance.ident())}" />
+					
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${doacaoInstance?.avatar2}">
+				<li class="fieldcontain">
+															
+  		<img class="avatar" src="${createLink(controller:'doacao', action:'avatar2_image', id:doacaoInstance.ident())}" />
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${doacaoInstance?.avatar3}">
+				<li class="fieldcontain">
+										
+  		<img class="avatar" src="${createLink(controller:'doacao', action:'avatar3_image', id:doacaoInstance.ident())}" />
+				</li>
+				</g:if>
+			
 				<g:if test="${doacaoInstance?.categoria}">
 				<li class="fieldcontain">
 					<span id="categoria-label" class="property-label"><g:message code="doacao.categoria.label" default="Categoria" /></span>

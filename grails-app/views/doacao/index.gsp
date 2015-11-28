@@ -24,15 +24,17 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="avatar1" title="${message(code: 'doacao.avatar1.label', default: 'Avatar1')}" />
+					
+						<g:sortableColumn property="avatar2" title="${message(code: 'doacao.avatar2.label', default: 'Avatar2')}" />
+					
+						<g:sortableColumn property="avatar3" title="${message(code: 'doacao.avatar3.label', default: 'Avatar3')}" />
+					
 						<th><g:message code="doacao.categoria.label" default="Categoria" /></th>
 					
 						<g:sortableColumn property="date" title="${message(code: 'doacao.date.label', default: 'Date')}" />
 					
 						<th><g:message code="doacao.doador.label" default="Doador" /></th>
-					
-						<g:sortableColumn property="nome" title="${message(code: 'doacao.nome.label', default: 'Nome')}" />
-					
-						<g:sortableColumn property="quantidade" title="${message(code: 'doacao.quantidade.label', default: 'Quantidade')}" />
 					
 					</tr>
 				</thead>
@@ -40,15 +42,14 @@
 				<g:each in="${doacaoInstanceList}" status="i" var="doacaoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${doacaoInstance.id}">${fieldValue(bean: doacaoInstance, field: "categoria")}</g:link></td>
+						<td><g:link action="show" id="${doacaoInstance.id}">${fieldValue(bean: doacaoInstance, field: "id")}</g:link></td>
+				
+					
+						<td>${fieldValue(bean: doacaoInstance, field: "categoria")}</td>
 					
 						<td><g:formatDate date="${doacaoInstance.date}" /></td>
 					
 						<td>${fieldValue(bean: doacaoInstance, field: "doador")}</td>
-					
-						<td>${fieldValue(bean: doacaoInstance, field: "nome")}</td>
-					
-						<td>${fieldValue(bean: doacaoInstance, field: "quantidade")}</td>
 					
 					</tr>
 				</g:each>

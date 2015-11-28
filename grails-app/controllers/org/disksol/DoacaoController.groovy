@@ -49,7 +49,47 @@ class DoacaoController {
     def edit(Doacao doacaoInstance) {
         respond doacaoInstance
     }
-
+	
+	def avatar1_image() {
+		def avatarUser =  Doacao.get(params.id)
+		if (!avatarUser || !avatarUser.avatar1 ) {
+		  response.sendError(404)
+		  return
+		}
+	
+		response.contentLength = avatarUser.avatar1.size()
+		OutputStream out = response.outputStream
+		out.write(avatarUser.avatar1)
+		out.close()
+	  }
+	
+	def avatar2_image() {
+		def avatarUser =  Doacao.get(params.id)
+		if (!avatarUser || !avatarUser.avatar2 ) {
+		  response.sendError(404)
+		  return
+		}
+	
+		response.contentLength = avatarUser.avatar2.size()
+		OutputStream out = response.outputStream
+		out.write(avatarUser.avatar2)
+		out.close()
+	  }
+	
+	def avatar3_image() {
+		def avatarUser =  Doacao.get(params.id)
+		if (!avatarUser || !avatarUser.avatar3 ) {
+		  response.sendError(404)
+		  return
+		}
+	
+		response.contentLength = avatarUser.avatar3.size()
+		OutputStream out = response.outputStream
+		out.write(avatarUser.avatar3)
+		out.close()
+	  }
+	
+	
     @Transactional
     def update(Doacao doacaoInstance) {
         if (doacaoInstance == null) {

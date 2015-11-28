@@ -2,6 +2,33 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: doacaoInstance, field: 'avatar1', 'error')} ">
+	<label for="avatar1">
+		<g:message code="doacao.avatar1.label" default="Avatar1" />
+		
+	</label>
+	<input type="file" id="avatar1" name="avatar1" />
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: doacaoInstance, field: 'avatar2', 'error')} ">
+	<label for="avatar2">
+		<g:message code="doacao.avatar2.label" default="Avatar2" />
+		
+	</label>
+	<input type="file" id="avatar2" name="avatar2" />
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: doacaoInstance, field: 'avatar3', 'error')} ">
+	<label for="avatar3">
+		<g:message code="doacao.avatar3.label" default="Avatar3" />
+		
+	</label>
+	<input type="file" id="avatar3" name="avatar3" />
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: doacaoInstance, field: 'categoria', 'error')} ">
 	<label for="categoria">
 		<g:message code="doacao.categoria.label" default="Categoria" />

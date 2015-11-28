@@ -595,3 +595,8 @@ a.skip {
 	position: absolute;
 	left: -9999px;
 }
+
+img.avatar {
+  width: 6.0em;
+  height: 7.5em;
+}

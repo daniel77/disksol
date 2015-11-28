@@ -25,7 +25,7 @@
 					</g:each>
 					
 		</div>
-			
+						
 							
 
 		<g:layoutBody/>
