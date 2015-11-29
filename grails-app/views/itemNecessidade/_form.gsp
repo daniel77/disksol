@@ -1,5 +1,6 @@
 <%@ page import="org.disksol.ItemNecessidade"%>
 
+
 <div
 	class="fieldcontain ${hasErrors(bean: itemNecessidadeInstance, field: 'nome', 'error')} ">
 	<label for="nome"> <g:message code="itemNecessidade.nome.label"
@@ -9,7 +10,6 @@
 	<g:textField name="nome" value="${itemNecessidadeInstance?.nome}" />
 
 </div>
-
 
 <div
 	class="fieldcontain ${hasErrors(bean: itemNecessidadeInstance, field: 'quantidade', 'error')} ">
@@ -21,7 +21,6 @@
 		value="${itemNecessidadeInstance.quantidade}" />
 
 </div>
-
 
 <div
 	class="fieldcontain ${hasErrors(bean: itemNecessidadeInstance, field: 'status', 'error')} ">
@@ -37,12 +36,24 @@
 </div>
 
 <div
+	class="fieldcontain ${hasErrors(bean: itemNecessidadeInstance, field: 'categoria', 'error')} ">
+	<label for="categoria"> <g:message
+			code="itemNecessidade.categoria.label" default="Categoria" />
+
+	</label>
+	<g:select id="categoria" name="categoria.id"
+		from="${org.disksol.Categoria.list()}" optionKey="id" required=""
+		value="${itemNecessidadeInstance?.categoria?.id}" class="many-to-one" />
+
+</div>
+
+<div
 	class="fieldcontain ${hasErrors(bean: itemNecessidadeInstance, field: 'descricao', 'error')} ">
 	<label for="descricao"> <g:message
 			code="itemNecessidade.descricao.label" default="Descrição" />
 
 	</label>
-	<g:textField name="descricao"
+	<g:textArea name="descricao"
 		value="${itemNecessidadeInstance?.descricao}" />
 
 </div>
@@ -58,5 +69,4 @@
 		value="${itemNecessidadeInstance?.evento?.id}" class="many-to-one" />
 
 </div>
-
 

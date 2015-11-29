@@ -33,6 +33,7 @@
 		<table>
 			<thead>
 				<tr>
+
 					<g:sortableColumn property="nome"
 						title="${message(code: 'itemNecessidade.nome.label', default: 'Nome')}" />
 
@@ -45,6 +46,8 @@
 					<g:sortableColumn property="descricao"
 						title="${message(code: 'itemNecessidade.descricao.label', default: 'Descrição')}" />
 
+					<th><g:message code="itemNecessidade.categoria.label"
+							default="Categoria" /></th>
 					<th><g:message code="itemNecessidade.evento.label"
 							default="Evento" /></th>
 
@@ -58,21 +61,26 @@
 						<td>
 							${fieldValue(bean: itemNecessidadeInstance, field: "nome")}
 						</td>
+	
 						<td>
 							${fieldValue(bean: itemNecessidadeInstance, field: "quantidade")}
 						</td>
+
 						<td>
 							${fieldValue(bean: itemNecessidadeInstance, field: "status")}
 						</td>
-						
-						<td><g:link action="show" id="${itemNecessidadeInstance.id}">
-								${fieldValue(bean: itemNecessidadeInstance, field: "descricao")}
-							</g:link>
+
+						<td>
+							${fieldValue(bean: itemNecessidadeInstance, field: "descricao")}
 						</td>
+
+						<td><g:link action="show" id="${itemNecessidadeInstance.id}">
+								${fieldValue(bean: itemNecessidadeInstance, field: "categoria")}
+							</g:link></td>
+
 						<td>
 							${fieldValue(bean: itemNecessidadeInstance, field: "evento")}
 						</td>
-
 					</tr>
 				</g:each>
 			</tbody>

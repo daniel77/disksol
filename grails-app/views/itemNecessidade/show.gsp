@@ -35,9 +35,6 @@
 		</g:if>
 		<ol class="property-list itemNecessidade">
 
-
-
-
 			<g:if test="${itemNecessidadeInstance?.nome}">
 				<li class="fieldcontain"><span id="nome-label"
 					class="property-label"><g:message
@@ -66,9 +63,20 @@
 			<g:if test="${itemNecessidadeInstance?.descricao}">
 				<li class="fieldcontain"><span id="descricao-label"
 					class="property-label"><g:message
-							code="itemNecessidade.descricao.label" default="Descricao" /></span> <span
+							code="itemNecessidade.descricao.label" default="Descrição" /></span> <span
 					class="property-value" aria-labelledby="descricao-label"><g:fieldValue
 							bean="${itemNecessidadeInstance}" field="descricao" /></span></li>
+			</g:if>
+
+			<g:if test="${itemNecessidadeInstance?.categoria}">
+				<li class="fieldcontain"><span id="categoria-label"
+					class="property-label"><g:message
+							code="itemNecessidade.categoria.label" default="Categoria" /></span> <span
+					class="property-value" aria-labelledby="categoria-label"><g:link
+							controller="categoria" action="show"
+							id="${itemNecessidadeInstance?.categoria?.id}">
+							${itemNecessidadeInstance?.categoria?.encodeAsHTML()}
+						</g:link></span></li>
 			</g:if>
 
 			<g:if test="${itemNecessidadeInstance?.evento}">
@@ -81,8 +89,6 @@
 							${itemNecessidadeInstance?.evento?.encodeAsHTML()}
 						</g:link></span></li>
 			</g:if>
-
-
 		</ol>
 		<g:form url="[resource:itemNecessidadeInstance, action:'delete']"
 			method="DELETE">

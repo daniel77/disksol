@@ -6,7 +6,7 @@ class ItemNecessidade {
 	String descricao;
 	Integer quantidade;
 	
-	static belongsTo = [evento: Evento ,status: StatusNecessidade]
+	static belongsTo = [evento: Evento ,status: StatusNecessidade, categoria: Categoria]
 	
     static constraints = {
     }
