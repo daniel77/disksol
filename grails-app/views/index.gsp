@@ -128,21 +128,21 @@ p {
 		<div id="controller-list" role="navigation">
 			<h2>Menus disponíveis:</h2>
 			<ul>
-				<li class="controller"><a href="/categoria/index">Categoria</a></li>
+				<li class="controller"><a href="${request.contextPath}/categoria/index">Categoria</a></li>
 
-				<li class="controller"><a href="/doacao/index">Doação</a></li>
+				<li class="controller"><a href="${request.contextPath}/doacao/index">Doação</a></li>
 
-				<li class="controller"><a href="/doador/index">Doador</a></li>
+				<li class="controller"><a href="${request.contextPath}/doador/index">Doador</a></li>
 
-				<li class="controller"><a href="/evento/index">Eventos</a></li>
+				<li class="controller"><a href="${request.contextPath}/evento/index">Eventos</a></li>
 
-				<li class="controller"><a href="/instituicao/index">Instituição</a></li>
+				<li class="controller"><a href="${request.contextPath}/instituicao/index">Instituição</a></li>
 
-				<li class="controller"><a href="/localDoacao/index">Local Doação</a></li>
+				<li class="controller"><a href="${request.contextPath}/localDoacao/index">Local Doação</a></li>
 
-				<li class="controller"><a href="/itemNecessidade/index">Requisições</a></li>
+				<li class="controller"><a href="${request.contextPath}/itemNecessidade/index">Requisições</a></li>
 
-				<li class="controller"><a href="/user/index">Usuários</a></li>
+				<li class="controller"><a href="${request.contextPath}/user/index">Usuários</a></li>
 			</ul>
 
 			<%
