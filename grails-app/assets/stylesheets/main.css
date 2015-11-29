@@ -49,6 +49,7 @@ body {
 
 #grailsLogo {
 	background-color: #4ECDC4;
+	font-size: 12px;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
@@ -599,4 +600,12 @@ a.skip {
 img.avatar {
   width: 6.0em;
   height: 7.5em;
+}
+
+.logo_2 {
+	width: 100px;	
+}
+
+.logo_3 {
+	width: 100px;	
 }

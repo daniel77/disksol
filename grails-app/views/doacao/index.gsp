@@ -24,12 +24,6 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="avatar1" title="${message(code: 'doacao.avatar1.label', default: 'Avatar1')}" />
-					
-						<g:sortableColumn property="avatar2" title="${message(code: 'doacao.avatar2.label', default: 'Avatar2')}" />
-					
-						<g:sortableColumn property="avatar3" title="${message(code: 'doacao.avatar3.label', default: 'Avatar3')}" />
-					
 						<th><g:message code="doacao.categoria.label" default="Categoria" /></th>
 					
 						<g:sortableColumn property="date" title="${message(code: 'doacao.date.label', default: 'Date')}" />

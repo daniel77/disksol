@@ -17,13 +17,14 @@
 		<g:layoutHead/>
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://www.disksolidariedade.com.br/"><asset:image src="grails_logo.png" alt="Grails"/></a> <asset:image src="hackathon.png" alt="Grails"/> 
+		<div id="grailsLogo" role="banner"><a href="http://www.disksolidariedade.com.br/"><asset:image src="logos.png" alt="Grails" class="logo_2"/></a>
 							<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
 					<g:if test="${c.fullName.startsWith('org.')}">
 						<g:link controller="${c.logicalPropertyName}">${c.fullName.replace('org.disksol.', '').replace('Controller', '')}</g:link>
 						</g:if>
 					</g:each>
-					
+				
+				<a href="http://hackathon.curitiba.pr.gov.br/" > <asset:image src="hackathon.png" alt="Grails" class="logo_3"/> </a>
 		</div>
 
 
