@@ -20,6 +20,24 @@
 				</g:link></li>
 		</ul>
 	</div>
+	
+	<div>
+		<g:form action='index' name='eventoIndexForm'>
+				<table>
+						<tr>
+							<td>Evento:</td>
+							<td colspan='3'><g:textField name='nome' size='50'
+									maxlength='255' autocomplete='off' value='${nome}' /></td>
+						</tr>
+						<tr>
+							<td colspan='4' align="right" >
+							<g:submitButton name="index"  elementId='index' form='eventoIndexForm' class="save" value="Pesquisar" />
+						</tr>
+				</table>
+			</g:form>
+		</div>
+	
+	
 	<div id="list-evento" class="content scaffold-list" role="main">
 		<h1>
 			<g:message code="default.list.label" args="[entityName]" />
@@ -29,6 +47,8 @@
 				${flash.message}
 			</div>
 		</g:if>
+		
+		
 		<table>
 			<thead>
 				<tr>
