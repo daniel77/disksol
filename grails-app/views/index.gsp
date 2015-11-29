@@ -126,25 +126,24 @@ p {
 		</p>
 
 		<div id="controller-list" role="navigation">
-			<h2>Menus disponiveis:</h2>
+			<h2>Menus disponíveis:</h2>
 			<ul>
+				<li class="controller"><a href="/disksol/categoria/index">Categoria</a></li>
 
+				<li class="controller"><a href="/disksol/doacao/index">Doação</a></li>
 
+				<li class="controller"><a href="/disksol/doador/index">Doador</a></li>
 
-				<g:each var="c"
-					in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-					<g:if test="${c.fullName.startsWith('org.')}">
-						<li class="controller"><g:link
-								controller="${c.logicalPropertyName}">
-								${c.fullName}
-							</g:link></li>
-					</g:if>
-				</g:each>
+				<li class="controller"><a href="/disksol/evento/index">Eventos</a></li>
 
+				<li class="controller"><a href="/disksol/instituicao/index">Instituição</a></li>
 
+				<li class="controller"><a href="/disksol/localDoacao/index">Local Doação</a></li>
 
+				<li class="controller"><a href="/disksol/itemNecessidade/index">Requisições</a></li>
+
+				<li class="controller"><a href="/disksol/user/index">Usuários</a></li>
 			</ul>
-
 
 			<%
 			 def xmlFeed = new XmlParser().parse('http://www.fas.curitiba.pr.gov.br/publico/rss/feedconteudos.xml');
@@ -165,7 +164,7 @@ p {
 			  feedList
 			  
 		 %>
-			<h2>Noticias da FAS:</h2>
+			<h2>Notícias da FAS:</h2>
 			<ul>
 
 				<g:each var="f" in="${feedList}">
@@ -194,8 +193,8 @@ p {
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
-	
-	
+
+
 
 
 </body>

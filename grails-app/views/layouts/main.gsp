@@ -18,11 +18,22 @@
 	</head>
 	<body>
 		<div id="grailsLogo" role="banner"><a href="http://www.disksolidariedade.com.br/"><asset:image src="logos.png" alt="Grails" class="logo_2"/></a>
-							<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-					<g:if test="${c.fullName.startsWith('org.')}">
-						<g:link controller="${c.logicalPropertyName}">${c.fullName.replace('org.disksol.', '').replace('Controller', '')}</g:link>
-						</g:if>
-					</g:each>
+							
+						<a href="/disksol/categoria/index">Categoria</a>
+						
+						<a href="/disksol/doacao/index">Doação</a>
+					
+						<a href="/disksol/doador/index">Doador</a>
+					
+						<a href="/disksol/evento/index">Evento</a>
+					
+						<a href="/disksol/instituicao/index">Instituição</a>
+					
+						<a href="/disksol/itemNecessidade/index">Requisição</a>
+					
+						<a href="/disksol/localDoacao/index">Local Doação</a>					
+					
+						<a href="/disksol/user/index">Usuário</a>
 				
 				<a href="http://hackathon.curitiba.pr.gov.br/" > <asset:image src="hackathon.png" alt="Grails" class="logo_3"/> </a>
 		</div>
