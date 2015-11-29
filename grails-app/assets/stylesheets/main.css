@@ -230,6 +230,7 @@ fieldset,
 	color: #666666;
 	text-align: right;
 	width: 25%;
+	font-weight: bold;
 }
 
 .fieldcontain .property-label {

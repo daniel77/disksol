@@ -13,7 +13,7 @@
 <div
 	class="fieldcontain ${hasErrors(bean: eventoInstance, field: 'dataInicio', 'error')} ">
 	<label for="dataInicio"> <g:message
-			code="evento.dataInicio.label" default="Data Inicio" />
+			code="evento.dataInicio.label" default="Data Início" />
 
 	</label>
 	<g:datePicker name="dataInicio" precision="day"
@@ -24,7 +24,7 @@
 <div
 	class="fieldcontain ${hasErrors(bean: eventoInstance, field: 'dataTermino', 'error')} ">
 	<label for="dataTermino"> <g:message
-			code="evento.dataTermino.label" default="Data Termino" />
+			code="evento.dataTermino.label" default="Data Término" />
 
 	</label>
 	<g:datePicker name="dataTermino" precision="day"
@@ -45,7 +45,7 @@
 <div
 	class="fieldcontain ${hasErrors(bean: eventoInstance, field: 'author', 'error')} ">
 	<label for="author"> <g:message code="evento.author.label"
-			default="Author" />
+			default="Autor" />
 
 	</label>
 	<g:select id="author" name="author.id"

@@ -5,7 +5,7 @@
 <head>
 <meta name="layout" content="main">
 <g:set var="entityName"
-	value="${message(code: 'itemNecessidade.label', default: 'ItemNecessidade')}" />
+	value="${message(code: 'itemNecessidade.label', default: 'Requisição')}" />
 <title><g:message code="default.show.label" args="[entityName]" /></title>
 </head>
 <body>
@@ -95,10 +95,10 @@
 			<fieldset class="buttons">
 				<g:link class="edit" action="edit"
 					resource="${itemNecessidadeInstance}">
-					<g:message code="default.button.edit.label" default="Edit" />
+					<g:message code="default.button.edit.label" default="Editar" />
 				</g:link>
 				<g:actionSubmit class="delete" action="delete"
-					value="${message(code: 'default.button.delete.label', default: 'Delete')}"
+					value="${message(code: 'default.button.delete.label', default: 'Excluir')}"
 					onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 			</fieldset>
 		</g:form>

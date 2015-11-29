@@ -43,7 +43,7 @@
 			<g:if test="${eventoInstance?.dataInicio}">
 				<li class="fieldcontain"><span id="dataInicio-label"
 					class="property-label"><g:message
-							code="evento.dataInicio.label" default="Data Inicio" /></span> <span
+							code="evento.dataInicio.label" default="Data Início" /></span> <span
 					class="property-value" aria-labelledby="dataInicio-label"><g:formatDate
 							date="${eventoInstance?.dataInicio}" /></span></li>
 			</g:if>
@@ -51,7 +51,7 @@
 			<g:if test="${eventoInstance?.dataTermino}">
 				<li class="fieldcontain"><span id="dataTermino-label"
 					class="property-label"><g:message
-							code="evento.dataTermino.label" default="Data Termino" /></span> <span
+							code="evento.dataTermino.label" default="Data Término" /></span> <span
 					class="property-value" aria-labelledby="dataTermino-label"><g:formatDate
 							date="${eventoInstance?.dataTermino}" /></span></li>
 			</g:if>
@@ -59,7 +59,7 @@
 			<g:if test="${eventoInstance?.descricao}">
 				<li class="fieldcontain"><span id="descricao-label"
 					class="property-label"><g:message
-							code="evento.descricao.label" default="Descricao" /></span> <span
+							code="evento.descricao.label" default="Descrição" /></span> <span
 					class="property-value" aria-labelledby="descricao-label"><g:fieldValue
 							bean="${eventoInstance}" field="descricao" /></span></li>
 			</g:if>
@@ -90,7 +90,7 @@
 			<g:if test="${eventoInstance?.author}">
 				<li class="fieldcontain"><span id="author-label"
 					class="property-label"><g:message code="evento.author.label"
-							default="Author" /></span> <span class="property-value"
+							default="Autor" /></span> <span class="property-value"
 					aria-labelledby="author-label"><g:link
 							controller="instituicao" action="show"
 							id="${eventoInstance?.author?.id}">
@@ -103,10 +103,10 @@
 			method="DELETE">
 			<fieldset class="buttons">
 				<g:link class="edit" action="edit" resource="${eventoInstance}">
-					<g:message code="default.button.edit.label" default="Edit" />
+					<g:message code="default.button.edit.label" default="Editar" />
 				</g:link>
 				<g:actionSubmit class="delete" action="delete"
-					value="${message(code: 'default.button.delete.label', default: 'Delete')}"
+					value="${message(code: 'default.button.delete.label', default: 'Excluir')}"
 					onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 			</fieldset>
 		</g:form>

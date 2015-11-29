@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'itemNecessidade.label', default: 'ItemNecessidade')}" />
+		<g:set var="entityName" value="${message(code: 'itemNecessidade.label', default: 'Requisição')}" />
 		<title><g:message code="default.edit.label" args="[entityName]" /></title>
 	</head>
 	<body>
@@ -33,7 +33,7 @@
 					<g:render template="form"/>
 				</fieldset>
 				<fieldset class="buttons">
-					<g:actionSubmit class="save" action="update" value="${message(code: 'default.button.update.label', default: 'Update')}" />
+					<g:actionSubmit class="save" action="update" value="${message(code: 'default.button.update.label', default: 'Atualizar')}" />
 				</fieldset>
 			</g:form>
 		</div>

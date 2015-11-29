@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'doacao.label', default: 'Doacao')}" />
+		<g:set var="entityName" value="${message(code: 'doacao.label', default: 'Doação')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 	</head>
@@ -31,7 +31,7 @@
 					<g:render template="form"/>
 				</fieldset>
 				<fieldset class="buttons">
-					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
+					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Salvar')}" />
 				</fieldset>
 			</g:form>
 		</div>

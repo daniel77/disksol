@@ -41,7 +41,7 @@
 						title="${message(code: 'evento.dataInicio.label', default: 'Data Início')}" />
 
 					<g:sortableColumn property="dataTermino"
-						title="${message(code: 'evento.dataTermino.label', default: 'Data Termino')}" />
+						title="${message(code: 'evento.dataTermino.label', default: 'Data Término')}" />
 
 					<g:sortableColumn property="descricao"
 						title="${message(code: 'evento.descricao.label', default: 'Descrição')}" />
@@ -56,9 +56,9 @@
 						<td>
 							${fieldValue(bean: eventoInstance, field: "nome")}
 						</td>
-						<td><g:formatDate date="${eventoInstance.dataInicio}" /></td>
+						<td><g:formatDate date="${eventoInstance.dataInicio}" format="dd/MM/yyyy" /></td>
 
-						<td><g:formatDate date="${eventoInstance.dataTermino}" /></td>
+						<td><g:formatDate date="${eventoInstance.dataTermino}" format="dd/MM/yyyy" /></td>
 
 						<td>
 							${fieldValue(bean: eventoInstance, field: "descricao")}

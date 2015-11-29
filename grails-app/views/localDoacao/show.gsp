@@ -5,7 +5,7 @@
 <head>
 <meta name="layout" content="main">
 <g:set var="entityName"
-	value="${message(code: 'localDoacao.label', default: 'LocalDoacao')}" />
+	value="${message(code: 'localDoacao.label', default: 'Local Doação')}" />
 <title><g:message code="default.show.label" args="[entityName]" /></title>
 </head>
 <body>
@@ -54,7 +54,7 @@
 			<g:if test="${localDoacaoInstance?.numero}">
 				<li class="fieldcontain"><span id="numero-label"
 					class="property-label"><g:message
-							code="localDoacao.numero.label" default="Numero" /></span> <span
+							code="localDoacao.numero.label" default="Número" /></span> <span
 					class="property-value" aria-labelledby="numero-label"><g:fieldValue
 							bean="${localDoacaoInstance}" field="numero" /></span></li>
 			</g:if>
@@ -100,10 +100,10 @@
 			method="DELETE">
 			<fieldset class="buttons">
 				<g:link class="edit" action="edit" resource="${localDoacaoInstance}">
-					<g:message code="default.button.edit.label" default="Edit" />
+					<g:message code="default.button.edit.label" default="Editar" />
 				</g:link>
 				<g:actionSubmit class="delete" action="delete"
-					value="${message(code: 'default.button.delete.label', default: 'Delete')}"
+					value="${message(code: 'default.button.delete.label', default: 'Excluir')}"
 					onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 			</fieldset>
 		</g:form>

@@ -5,7 +5,7 @@
 <head>
 <meta name="layout" content="main">
 <g:set var="entityName"
-	value="${message(code: 'instituicao.label', default: 'Instituicao')}" />
+	value="${message(code: 'instituicao.label', default: 'Instituição')}" />
 <title><g:message code="default.show.label" args="[entityName]" /></title>
 </head>
 <body>
@@ -73,7 +73,7 @@
 			method="DELETE">
 			<fieldset class="buttons">
 				<g:link class="edit" action="edit" resource="${instituicaoInstance}">
-					<g:message code="default.button.edit.label" default="Edit" />
+					<g:message code="default.button.edit.label" default="Editar" />
 				</g:link>
 				<g:actionSubmit class="delete" action="delete"
 					value="${message(code: 'default.button.delete.label', default: 'Delete')}"
