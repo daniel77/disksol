@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="layout" content="main" />
-<title>Welcome to Grails</title>
+<title>Disk Solidariedade</title>
 <style type="text/css" media="screen">
 #status {
 	background-color: #eee;
@@ -95,7 +95,6 @@ p {
 			<li>Services: ${grailsApplication.serviceClasses.size()}</li>
 			<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
 		</ul>
-
 		<br />
 		<div id="fb-root"></div>
 
@@ -113,7 +112,7 @@ p {
 		</div>
 	</div>
 	<div id="page-body" role="main">
-		<h1>Welcome to Disk Solidariedade</h1>
+		<h1>Seja bem vindo ao Disk Solidariedade</h1>
 		<p>
 			<br> Consiste em uma Plataforma Social onde o cidadão pode
 			registrar a intenção de doação de algo pertinente,<br> podendo
@@ -195,6 +194,8 @@ p {
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
+	
+	
 
 
 </body>
