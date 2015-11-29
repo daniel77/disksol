@@ -74,3 +74,13 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: doacaoInstance, field: 'quantidade', 'error')} ">
+	<label for="googleMap">
+		Ponto de coleta:
+		
+	</label>
+	<div id="googleMap"  name="googleMap" style="width:500px;height:380px;"></div>
+
+</div>
+
+

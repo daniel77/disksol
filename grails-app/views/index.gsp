@@ -123,7 +123,38 @@ Consiste em uma Plataforma Social onde o cidadão pode registrar a intenção de
 					</g:each>
 					
 					
+					
 				</ul>
+				
+						
+		<%
+			 def xmlFeed = new XmlParser().parse('http://www.fas.curitiba.pr.gov.br/publico/rss/feedconteudos.xml');
+		
+			  def feedList = []
+			
+			  (0..< xmlFeed.channel.item.size()).each {
+		
+				 def item = xmlFeed.channel.item.get(it);
+				 def feed = [:]
+				 feed.title =  item.title.text()
+				 feed.link =  item.link.text()
+				 feed.desc = item.description.text() 
+					 
+				 feedList << feed
+			  }
+		
+			  feedList
+			  
+		 %>				
+								<h2>Noticias da FAS:</h2>
+				<ul>
+				
+					<g:each var="f" in="${feedList}">
+				<li class="controller"> <a href="${f.link}">${f.title}</a> </li>
+					</g:each>	
+							
+				</ul>
+				
 			</div>
 		</div>
 	</body>
