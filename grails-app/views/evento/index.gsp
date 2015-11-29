@@ -27,11 +27,8 @@
 						<tr>
 							<td>Evento:</td>
 							<td colspan='3'><g:textField name='nome' size='50'
-									maxlength='255' autocomplete='off' value='${nome}' /></td>
-						</tr>
-						<tr>
-							<td colspan='4' align="right" >
-							<g:submitButton name="index"  elementId='index' form='eventoIndexForm' class="save" value="Pesquisar" />
+									maxlength='255' autocomplete='off' value='${nome}' />
+									<g:submitButton name="index"  elementId='index' form='eventoIndexForm' class="save" value="Pesquisar" /></td>
 						</tr>
 				</table>
 			</g:form>

@@ -112,17 +112,19 @@ p {
 		</div>
 	</div>
 	<div id="page-body" role="main">
-		<h1>Seja bem vindo ao Disk Solidariedade</h1>
+		<h1>Seja bem vindo a Plataforma Disk Solidariedade</h1>
 		<p>
 			<br> Consiste em uma Plataforma Social onde o cidadão pode
 			registrar a intenção de doação de algo pertinente,<br> podendo
 			incluir fotos e demais informações pertinentes a esta doação.<br>
 
-			<br> <a
-				href="https://www.sebraecanvas.com/#/dashboard/meus-canvas/16868">
-				Canvas </a><br> <br> <a
-				href="http://hackathon.peacelabs.co/projects/rua-da-cidadania-1">Peace
-				libs</a>:<br>
+			<br> 
+			Equipe Rua da Cidadania é formada por:<br> 
+			<a href="https://www.linkedin.com/in/daniel77gorski">Daniel Gorski</a> <br>
+			<a href="https://www.thiagolemes.com">Thiago Lemes </a><br>
+			<a href="mailto:tlribeiro@outlook.com">Thiago Ribeiro</a><br>
+			<br><asset:image src="canvas.png" alt="Grails" class="logo_canvas"/>  <br> <a
+				href="http://hackathon.peacelabs.co/projects/rua-da-cidadania-1">DOCUMENTAÇÃO PEACELABS</a><br>
 		</p>
 
 		<div id="controller-list" role="navigation">
@@ -137,7 +139,7 @@ p {
 				<li class="controller"><a href="${request.contextPath}/evento/index">Eventos</a></li>
 
 				<li class="controller"><a href="${request.contextPath}/instituicao/index">Instituição</a></li>
-
+ 
 				<li class="controller"><a href="${request.contextPath}/localDoacao/index">Local Doação</a></li>
 
 				<li class="controller"><a href="${request.contextPath}/itemNecessidade/index">Requisições</a></li>

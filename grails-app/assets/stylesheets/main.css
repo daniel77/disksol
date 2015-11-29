@@ -610,3 +610,8 @@ img.avatar {
 .logo_3 {
 	width: 100px;	
 }
+
+.logo_canvas {
+    width: 91%;
+    margin-top: 27px;
+}
