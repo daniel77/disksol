@@ -128,21 +128,21 @@ p {
 		<div id="controller-list" role="navigation">
 			<h2>Menus disponíveis:</h2>
 			<ul>
-				<li class="controller"><a href="/disksol/categoria/index">Categoria</a></li>
+				<li class="controller"><a href="/categoria/index">Categoria</a></li>
 
-				<li class="controller"><a href="/disksol/doacao/index">Doação</a></li>
+				<li class="controller"><a href="/doacao/index">Doação</a></li>
 
-				<li class="controller"><a href="/disksol/doador/index">Doador</a></li>
+				<li class="controller"><a href="/doador/index">Doador</a></li>
 
-				<li class="controller"><a href="/disksol/evento/index">Eventos</a></li>
+				<li class="controller"><a href="/evento/index">Eventos</a></li>
 
-				<li class="controller"><a href="/disksol/instituicao/index">Instituição</a></li>
+				<li class="controller"><a href="/instituicao/index">Instituição</a></li>
 
-				<li class="controller"><a href="/disksol/localDoacao/index">Local Doação</a></li>
+				<li class="controller"><a href="/localDoacao/index">Local Doação</a></li>
 
-				<li class="controller"><a href="/disksol/itemNecessidade/index">Requisições</a></li>
+				<li class="controller"><a href="/itemNecessidade/index">Requisições</a></li>
 
-				<li class="controller"><a href="/disksol/user/index">Usuários</a></li>
+				<li class="controller"><a href="/user/index">Usuários</a></li>
 			</ul>
 
 			<%
