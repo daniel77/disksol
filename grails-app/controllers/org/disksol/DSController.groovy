@@ -5,8 +5,8 @@ class DSController {
 	private static final okcontents = ['image/png', 'image/jpeg', 'image/gif']
 	
 	def show() {
-		
 
+		
 		render(view: "/uploadPhoto")
 	}
 

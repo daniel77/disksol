@@ -71,6 +71,7 @@ grails.project.dependency.resolution = {
 		
 		compile ":mail:1.0.7"
 		
+		compile ":csv:0.3.1"
 		
 		compile":famfamfam:1.0"
 		// read about mongo files, lets store everything in there.
@@ -80,7 +81,7 @@ grails.project.dependency.resolution = {
 		runtime ":database-migration:1.4.0"
 		runtime ":jquery:1.11.1"
 		runtime ":jquery-ui:1.10.3"
-
+		
 		// Uncomment these to enable additional asset-pipeline capabilities
 		//compile ":sass-asset-pipeline:1.9.0"
 		//compile ":less-asset-pipeline:1.10.0"
